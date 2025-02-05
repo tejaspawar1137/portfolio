@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./logo2.jpeg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -6,7 +6,10 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-
+import artsmiley from "./artsmiley.png";
+import photoPoint from './photo-point.png'
+import zapilio from './zapilio.png';
+import stethup from './stethup.png'
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -58,5 +61,9 @@ export {
   tesla,
   carrent,
   jobit,
+  artsmiley,
+  stethup,
+  zapilio,
+  photoPoint,
   tripguide,
 };
