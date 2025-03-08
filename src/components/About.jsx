@@ -38,16 +38,17 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+      <motion.div variants={textVariant()} className="relative">
+        <p className={`${styles.sectionSubText} green-pink-gradient-text`}>Introduction</p>
+        <h2 className={`${styles.sectionHeadText} green-pink-gradient-text`}>Overview.</h2>
+        <div className="absolute bottom-0 left-0 w-40 h-1 green-pink-gradient rounded-full" />
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-     Reactjs Developer | Full Stack Developer | 3+ Years of Experience | Expertise in Building Scalable, Efficient, and User-Centric Applications to Solve Complex Business Challenges | Proficient in Front-End & Back-End Development
+        Reactjs Developer | Full Stack Developer | 3+ Years of Experience | Expertise in Building Scalable, Efficient, and User-Centric Applications to Solve Complex Business Challenges | Proficient in Front-End & Back-End Development
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
@@ -55,8 +56,25 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
+
+      {/* Add a gradient divider */}
+      <div className="w-full h-[2px] green-pink-gradient mt-16 rounded-full" />
     </>
   );
 };
+
+// You'll need to add these CSS classes to your styles file
+// Add this to your CSS/Tailwind setup:
+/*
+.green-pink-gradient-text {
+  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.green-pink-gradient {
+  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+}
+*/
 
 export default SectionWrapper(About, "about");
