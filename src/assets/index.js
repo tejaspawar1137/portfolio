@@ -1,4 +1,5 @@
 import logo from "./logo2.jpeg";
+import monkeyType from './monkeytype.png'
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -66,4 +67,5 @@ export {
   zapilio,
   photoPoint,
   tripguide,
+   monkeyType
 };

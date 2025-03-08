@@ -26,7 +26,8 @@ import {
   artsmiley,
   zapilio,
   stethup,
-  photoPoint
+  photoPoint,
+  monkeyType
 } from "../assets";
 
 export const navLinks = [
@@ -301,6 +302,24 @@ const projects = [
     ],
     image: zapilio, // Replace with the actual image variable or URL
     source_code_link: "https://www.zapilio.com", // Update if Zapilio has a separate link
+  },
+  {
+    name: "MonkeyType",
+    description:
+      "MonkeyType Advanced Analytics tracks typing performance with detailed metrics showing speed trends, accuracy patterns, and problem keys.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "redux-thunk",
+        color: "green-text-gradient",
+      },
+    
+    ],
+    image: monkeyType, // Replace with the actual image variable or URL
+    source_code_link: "https://typing-game-react-blue.vercel.app/",
   },
 ];
 
